@@ -1,0 +1,231 @@
+:root {
+  --blue: #2196f3;
+  --titles: #212121;
+  --links: #757575;
+  --lightgray: #ececec;
+  --dark-background: #2f303a;
+  --buttons: #f5f4fa;
+  --black: #000;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--titles);
+}
+
+/* header */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+}
+.logo-link {
+  text-decoration: none;
+}
+.web {
+  color: var(--blue);
+}
+.studio {
+  color: var(--black);
+}
+.studio-footer {
+  color: var(--white);
+}
+.nav-link {
+  color: var(--titles);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  text-decoration: none;
+}
+
+.contact-link {
+  color: var(--links);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--blue);
+}
+
+.studio-link:visited,
+.portfolio-link:visited {
+  color: var(--blue);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--blue);
+}
+
+.nav-links,
+.contact-links,
+.project-buttons,
+.portfolio-pro {
+  list-style: none;
+  padding: 0;
+}
+
+/* project buttons (portfolio.html) */
+
+.button-pro {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--buttons);
+  color: var(--titles);
+  font-size: 16px;
+  line-height: 1.625;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+
+.button-pro:hover,
+.button-pro:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* portfolio projects (portfolio.html)*/
+
+.portfolio-pro-titles {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.portfolio-pro-p {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--links);
+}
+
+/* footer */
+.footer-section {
+  background-color: var(--dark-background);
+}
+
+.logo-footer {
+  text-decoration: none;
+}
+
+.adress-footer {
+  font-size: 14px;
+  line-height: 1.714;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
+  list-style: none;
+  padding: 0;
+}
+
+.contact-link-footer {
+  color: var(--links);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  text-decoration: none;
+}
+
+.contact-link-footer:hover,
+.contact-link-footer:focus {
+  color: var(--blue);
+}
+
+/* business solutions (index.html) */
+
+.business {
+  background-color: var(--dark-background);
+}
+
+.business-solution {
+  font-size: 44px;
+  line-height: 1.364;
+  font-weight: 900;
+  color: var(--white);
+  text-align: center;
+}
+
+.business-button {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+/* about us details (index.html) */
+
+.about-us-details {
+  list-style: none;
+  padding: 0;
+}
+.about-us-details-titles {
+  font-size: 14px;
+  line-height: 1.172;
+  font-weight: 700;
+}
+
+.about-us-details-p {
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--links);
+}
+
+/* what we do (index.html) */
+
+.what-we-do-title {
+  font-size: 36px;
+  line-height: 1.172;
+  font-weight: 700;
+  text-align: center;
+}
+
+.what-we-do {
+  list-style: none;
+  padding: 0;
+}
+
+/* our team (index.html) */
+
+.our-team {
+  background-color: var(--buttons);
+  list-style: none;
+  padding: 0;
+}
+
+.our-team-logo {
+  font-size: 36px;
+  line-height: 1.172;
+  font-weight: 700;
+  text-align: center;
+}
+
+.our-team-titles {
+  font-size: 16px;
+  line-height: 1.172;
+  font-weight: 500;
+}
+
+.our-team-p {
+  font-size: 14px;
+  line-height: 1.172;
+  color: var(--links);
+}
