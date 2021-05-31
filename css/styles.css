@@ -7,22 +7,30 @@
   --buttons: #f5f4fa;
   --black: #000;
   --white: #ffffff;
+  --ultralightgray: #eeeeee;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--titles);
-  margin: 0 auto;
+  margin: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
-  background-color: rgb(79, 128, 50);
   margin: 0 auto;
 }
 
 /* header */
+.header-container {
+  border: 1px solid var(--lightgray);
+}
+
 .header-section {
   display: flex;
   align-items: center;
@@ -37,12 +45,10 @@ body {
 }
 .header-section .nav-item {
   margin-left: 50px;
-  background-color: violet;
 }
 
 .header-section .contacts-item {
   margin-left: 50px;
-  background-color: yellowgreen;
 }
 
 .logo {
@@ -51,9 +57,8 @@ body {
   font-weight: 700;
   line-height: 1.174;
   letter-spacing: 0.03em;
-  background-color: aquamarine;
-  padding-top: 32px;
-  padding-bottom: 31px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-link {
   text-decoration: none;
@@ -115,6 +120,23 @@ body {
 
 /* project buttons (portfolio.html) */
 
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 0;
+  /* margin: 0; */
+}
+
+/* .project-buttons .project-button-li:not(first-child) {
+  margin-left: 8px;
+} */
+
+.main-content-portfolio .project-buttons .project-button-li:not(:first-child) {
+  margin-left: 8px;
+}
+
 .button-pro {
   font-family: "Roboto", sans-serif;
   background-color: var(--buttons);
@@ -133,29 +155,70 @@ body {
 .button-pro:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0 0 5px rgba(51, 49, 49, 0.5);
 }
 
 /* portfolio projects (portfolio.html)*/
 
+.portfolio-pro {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-pro-li {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .portfolio-pro-titles {
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
 }
 
 .portfolio-pro-p {
   font-size: 16px;
   line-height: 1.875;
   color: var(--links);
+  margin: 0;
 }
 
+.portfolio-pro .portfolio-pro-li .portfolio-pro-text {
+  margin: 0;
+}
+.portfolio-pro-text {
+  background-color: var(--white);
+  border: 1px solid var(--lightgray);
+  padding: 20px 24px;
+}
+
+.img-pro {
+  display: block;
+}
 /* footer */
 .footer-section {
   background-color: var(--dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-section ul li:not(first-child) {
+  margin-top: 9px;
 }
 
 .logo-footer {
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  padding: 0;
 }
 
 .adress-footer {
@@ -165,7 +228,9 @@ body {
   font-style: normal;
   color: var(--white);
   list-style: none;
+  margin-top: 20px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .contact-link-footer {
@@ -174,6 +239,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   text-decoration: none;
+  font-style: normal;
 }
 
 .contact-link-footer:hover,
@@ -185,14 +251,21 @@ body {
 
 .business {
   background-color: var(--dark-background);
+  box-sizing: border-box;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .business-solution {
+  font-family: "Roboto", sans-serif;
   font-size: 44px;
   line-height: 1.364;
   font-weight: 900;
   color: var(--white);
   text-align: center;
+  margin: 0;
+  letter-spacing: 0.06em;
 }
 
 .business-button {
@@ -209,44 +282,98 @@ body {
   cursor: pointer;
 }
 
+.business-button-container {
+  padding-top: 30px;
+  padding-left: 500px;
+}
+
 /* about us details (index.html) */
 
 .about-us-details {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  /* padding-top: 94px; */
+  padding-left: 0px;
+  margin: 0;
 }
+
+.about-us-details li:not(:first-child) {
+  margin-left: 30px;
+}
+
 .about-us-details-titles {
   font-size: 14px;
   line-height: 1.172;
   font-weight: 700;
+  margin: 0;
 }
 
 .about-us-details-p {
   font-size: 14px;
   line-height: 1.714;
   color: var(--links);
+  margin: 0;
+  padding-top: 10px;
 }
 
 /* what we do (index.html) */
+
+.what-we-do-section {
+  padding-top: 0;
+}
 
 .what-we-do-title {
   font-size: 36px;
   line-height: 1.172;
   font-weight: 700;
   text-align: center;
+  margin: 0;
 }
 
 .what-we-do {
+  display: flex;
+  justify-content: center;
   list-style: none;
-  padding: 0;
+  padding-top: 50px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.what-we-do li:not(first-child) {
+  margin-left: 30px;
 }
 
 /* our team (index.html) */
 
-.our-team {
+.our-team-semantic-section {
   background-color: var(--buttons);
+}
+
+.our-team-section {
+  padding-left: 0;
+  /* padding-top: 94px; */
+  /* height: 648px; */
+}
+
+.our-team {
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.our-team li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.our-team-li {
+  height: 368px;
+  background-color: var(--white);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 5px rgba(129, 122, 122, 0.5);
 }
 
 .our-team-logo {
@@ -254,16 +381,19 @@ body {
   line-height: 1.172;
   font-weight: 700;
   text-align: center;
+  margin: 0;
 }
 
 .our-team-titles {
   font-size: 16px;
   line-height: 1.172;
   font-weight: 500;
+  text-align: center;
 }
 
 .our-team-p {
   font-size: 14px;
   line-height: 1.172;
   color: var(--links);
+  text-align: center;
 }
