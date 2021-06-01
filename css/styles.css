@@ -10,6 +10,18 @@
   --ultralightgray: #eeeeee;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--titles);
@@ -29,6 +41,8 @@ body {
 /* header */
 .header-container {
   border: 1px solid var(--lightgray);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-section {
@@ -57,8 +71,6 @@ body {
   font-weight: 700;
   line-height: 1.174;
   letter-spacing: 0.03em;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .logo-link {
   text-decoration: none;
@@ -116,6 +128,7 @@ body {
 .portfolio-pro {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* project buttons (portfolio.html) */
@@ -264,7 +277,7 @@ body {
   font-weight: 900;
   color: var(--white);
   text-align: center;
-  margin: 0;
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
 }
 
@@ -283,8 +296,7 @@ body {
 }
 
 .business-button-container {
-  padding-top: 30px;
-  padding-left: 500px;
+  text-align: center;
 }
 
 /* about us details (index.html) */
@@ -332,15 +344,9 @@ body {
 
 .what-we-do {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   padding-top: 50px;
-  padding-left: 0;
-  margin: 0;
-}
-
-.what-we-do li:not(first-child) {
-  margin-left: 30px;
 }
 
 /* our team (index.html) */
@@ -357,11 +363,8 @@ body {
 
 .our-team {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
-  padding: 0;
-  margin-top: 50px;
-  margin-bottom: 0px;
 }
 
 .our-team li:not(:first-child) {
@@ -369,7 +372,7 @@ body {
 }
 
 .our-team-li {
-  height: 368px;
+  padding-bottom: 30px;
   background-color: var(--white);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -381,7 +384,7 @@ body {
   line-height: 1.172;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .our-team-titles {
